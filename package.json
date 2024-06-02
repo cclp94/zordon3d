@@ -1,0 +1,32 @@
+{
+  "name": "zordon-3d",
+  "description": "A Web component for floating 3D heads",
+  "license": "MIT",
+  "author": "Caio Paiva",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "lit": "^3.1.2"
+  },
+  "peerDependencies": {
+    "three": ">= 0.100.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.164.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "three": ">=0.100.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "main": "dist/zordon-3d.js",
+  "module": "zordon-3d.js",
+  "types": "zordon-3d.d.ts",
+  "files": [
+    "dist/**/*"
+  ]
+}
