@@ -11,7 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "lit": "^3.1.2"
+    "lit": "^3.1.2",
+    "vite-plugin-dts": "^3.9.1"
   },
   "peerDependencies": {
     "three": ">= 0.100.0"
@@ -23,10 +24,19 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   },
-  "main": "dist/zordon-3d.js",
-  "module": "zordon-3d.js",
-  "types": "zordon-3d.d.ts",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "types": "dist/zordon-3d.d.ts",
+  "expots": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
   "files": [
-    "dist/**/*"
-  ]
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

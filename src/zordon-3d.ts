@@ -1,15 +1,15 @@
 import { LitElement } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
 import * as THREE from 'three';
-import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 @customElement('zordon-3d')
 export class Zordon3d extends LitElement {
   @property({ type: String }) modelSrc = '';
-  @property({ type: Number }) width = 500;
-  @property({ type: Number }) height = 500;
+  @property({ type: Number }) width? = 500;
+  @property({ type: Number }) height? = 500;
 
-  @property({ type: Number }) cameraZOffset = 0;
+  @property({ type: Number }) cameraZOffset? = 0;
 
   @property({ type: Number }) bounce = 1;
   @property({ type: Number }) bounceSpeed = 5;
@@ -82,7 +82,7 @@ export class Zordon3d extends LitElement {
       (resolve, reject) => {
         const loader = new GLTFLoader();
         loader.load(src,
-        async (gltf: GLTF) => {
+        async (gltf: any) => {
           const model = gltf.scene;
           await this.renderer.compileAsync(model, this.camera, this.scene);
           resolve(model);
@@ -153,6 +153,7 @@ export class Zordon3d extends LitElement {
     return ((look * -0.001) - target) * this.TURN_SPEED;
   }
 }
+
 
 declare global {
   interface HTMLElementTagNameMap {
