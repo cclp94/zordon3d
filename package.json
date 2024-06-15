@@ -6,6 +6,14 @@
   "author": "Caio Paiva",
   "version": "0.0.2",
   "type": "module",
+  "keywords": [
+    "3d",
+    "three",
+    "threejs",
+    "three.js"
+    "web component",
+    "lit"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
