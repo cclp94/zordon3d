@@ -19,27 +19,44 @@ npm i three zordon-3d
 
 ## Usage
 ### React
-```typescript
-import { zordon3d } from 'zordon-3d';
+Import the scripts in your index.html
+```html
+ <script type="module" src="/node_modules/zordon-3d"></script>
+```
 
+Create a react wrapper for the native component
+```typescript
+import { Zordon3d } from 'zordon-3d';
+
+// Register custom element
 declare global {
-  namespace jsx {
-    interface instrinsicelements {
-      'zordon-3d': zordon3d
+  namespace JSX {
+    interface IntrinsicElements {
+      'zordon-3d': Partial<Zordon3d>
     }
   }
 }
 
-export default function Zordon3d() {
-  const bounce = 3;
-  const bounceSpeed = 3;
+type IProps = {
+    bounce: number;
+    bounceSpeed: number;
+    src: string;
+}
+
+export default function Zordon({ bounce, bounceSpeed, src}: IProps) {
   return (
     <zordon-3d
-      modelsrc={new url('...glb'), import.meta.url).tostring()}
+      modelSrc={src}
       bounce={bounce}
-      bouncespeed={bounceSpeed} />
+      bounceSpeed={bounceSpeed} />
   );
 }
+```
+
+Your component is now ready to use!
+
+```typescript
+<Zordon3d bounce={3} bounceSpeed={3} src={new URL('...', import.meta.url).toString()} />
 ```
 
 
