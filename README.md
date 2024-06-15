@@ -14,11 +14,10 @@ Before installing Zordon-3D, ensure you have Three.js installed as a peer depend
 
 
 ```bash
-npm install three
+npm i three zordon-3d
 ```
 
 ## Usage
-
 ### React
 ```typescript
 import { zordon3d } from 'zordon-3d';
