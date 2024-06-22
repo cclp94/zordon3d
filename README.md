@@ -1,7 +1,7 @@
 
 # Zordon 3D
+<img alt="NPM Version" src="https://img.shields.io/npm/v/zordon-3d?style=for-the-badge" style="flat" /> <img alt="NPM Downloads" src="https://img.shields.io/npm/d18m/zordon-3d?style=for-the-badge">
 
-Description
 Zordon-3D is a web component for displaying floating 3D heads.
 
 ## Features
@@ -58,6 +58,8 @@ Your component is now ready to use!
 ```typescript
 <Zordon3d bounce={3} bounceSpeed={3} src={new URL('...', import.meta.url).toString()} />
 ```
+
+[Sketch Fab](https://sketchfab.com/) is a good to place to start looking for models to use!
 
 
 ## License
