@@ -1,6 +1,6 @@
 
 # Zordon 3D
-<img alt="NPM Version" src="https://img.shields.io/npm/v/zordon-3d?style=for-the-badge" style="flat" /> <img alt="NPM Downloads" src="https://img.shields.io/npm/d18m/zordon-3d?style=for-the-badge">
+<a href="https://www.npmjs.com/package/zordon-3d" target="_blank"><img alt="NPM Version" src="https://img.shields.io/npm/v/zordon-3d?style=for-the-badge" /></a> <a href="https://www.npmjs.com/package/zordon-3d" target="_blank"><img alt="NPM Downloads" src="https://img.shields.io/npm/d18m/zordon-3d?style=for-the-badge"></a>
 
 Zordon-3D is a web component for displaying floating 3D heads.
 
