@@ -28,6 +28,6 @@ jobs:
       - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
       - run: git config user.name "$GITHUB_ACTOR"
       - run: npm version from-git -m "[ci skip] [RELEASE] v%s"
-      - run: npm publish
+      - run: npm publish --verbose
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

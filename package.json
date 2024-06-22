@@ -1,7 +1,10 @@
 {
   "name": "zordon-3d",
   "description": "A Web component for floating 3D heads",
-  "repository": "github:cclp94/zordon3d",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cclp94/zordon3d.git"
+  },
   "license": "MIT",
   "author": "Caio Paiva",
   "version": "0.0.4",
@@ -17,6 +20,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "prepare": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
