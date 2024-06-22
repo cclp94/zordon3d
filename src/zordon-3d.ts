@@ -6,8 +6,8 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 @customElement('zordon-3d')
 export class Zordon3d extends LitElement {
   @property({ type: String }) modelSrc = '';
-  @property({ type: Number }) width? = 500;
-  @property({ type: Number }) height? = 500;
+  @property({ type: Number }) width = 500;
+  @property({ type: Number }) height = 500;
 
   @property({ type: Number }) cameraZOffset? = 0;
 
